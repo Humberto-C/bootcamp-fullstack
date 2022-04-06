@@ -1,6 +1,6 @@
 #  Week 1 - Tuesday
 
-## Ensure question Challenge
+## Ensure question Challenge ✔️
 
 Given a string, write a function that returns the string with a question mark ("?") appends to the end, unless the original string ends with a question mark, in which case, returns the original string.
 
@@ -22,7 +22,7 @@ For example (Input --> Output)
   
 </details>
 
-## Reversed Words Challenge
+## Reversed Words Challenge ✔️
 
 Complete the solution so that it reverses all of the words within the string passed in.
 
