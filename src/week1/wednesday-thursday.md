@@ -1,6 +1,6 @@
 # Week 1 - Wednesday
 
-## Find the smallest integer in the array
+## Find the smallest integer in the array ✔️
 
 Given an array of integers your solution should find the smallest integer. 
 You can assume, for the purpose of this kata, that the supplied array will not be empty.
@@ -24,7 +24,7 @@ For example:
 
 # Week 1 - Thursday
 
-## Odd or Even?
+## Odd or Even? ✔️
 
 Given a list of integers, determine whether the sum of its elements is odd or even.
 
