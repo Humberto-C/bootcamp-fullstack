@@ -5,6 +5,7 @@
   <summary>🏁 Week 1</summary>
   
   - [Tuesday](/src/week1/tuesday.md)
+  - [Wednesday and Thursday](/src/week1/wednesday-thursday.md)
   
   
 </details>
