@@ -10,4 +10,12 @@
   
 </details>
 
+<details>
+  <summary>🏁 Week 2</summary>
+  
+  - [Monday](/src/week2/monday.md)
+  - [Tuesday]()
+  
+  
+</details>
 
