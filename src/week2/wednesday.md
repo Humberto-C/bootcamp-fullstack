@@ -23,10 +23,38 @@ Helpful docs on Events: https://reactjs.org/docs/handling-events.html
   
   ```js
     
-  function isPalindrome(line) {
-  if(typeof line == 'number') line = line.toString();
-  return line == line.split('').reverse().join('') ? true : false;
+  import React from 'react';
+
+export class Counter extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state  = {counter: 0};
+    // Your state
   }
+    
+  decrement() {
+    this.state.counter--;
+  }; 
+  
+  increment() {
+    this.state.counter++;
+  }; 
+  
+  // Your event handlers 
+  render() {
+    return (
+      <>
+        <h1 id='counter'>{this.state.counter}</h1>
+          <button type="button" id="decrement" onClick={() => this.decrement()}>
+            Decrement
+          </button>
+          <button type="button" id="increment" onClick={() => this.increment()}>
+            Increment
+          </button>
+      </>
+    )
+  }
+}
   ```
   
 </details>
