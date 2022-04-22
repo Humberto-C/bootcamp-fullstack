@@ -14,7 +14,9 @@
   <summary>🏁 Week 2</summary>
   
   - [Monday](/src/week2/monday.md)
-  - [Tuesday]()
+  - [Wednesday](/src/week2/wednesday.md)
+  - [Thursday](/src/week2/thursday.md)
+
   
   
 </details>
