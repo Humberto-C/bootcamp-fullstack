@@ -29,15 +29,37 @@ class WishlistForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      <label for="name">Name</label>
-      <input type="text" id="name">
+      name: "",
+      wish: "",
+      priority: 1,
     }
   }
   
+  handleSubmit() {
+    
+    onSubmit.preventDefault;
+    this.props.send(this.state);
+
+  }
+  
+
+  
   render() {
     return (
-      <form >
-       
+      
+      <form onSubmit={() => {handleSubmit()}}>
+        <label for="name" >Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name..."/>
+        <label for="wish">Describe your wish</label>
+        <textarea id="wish" name="wish"/>
+        <label for="priority">Priority of the Wish</label>
+        <select name="priority" id="priority">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
       </form>
     );
   }
