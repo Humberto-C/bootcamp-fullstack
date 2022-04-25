@@ -33,33 +33,73 @@ class WishlistForm extends React.Component {
       wish: "",
       priority: 1,
     }
-  }
-  
-  handleSubmit() {
     
-    onSubmit.preventDefault;
-    this.props.send(this.state);
+    this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleChangeText = this.handleChangeText.bind(this);
+    this.handleChangeTextArea = this.handleChangeTextArea.bind(this);
+    this.handleChangePrio = this.handleChangePrio.bind(this);
 
   }
   
+  handleSubmit(event) {
+    event.preventDefault();
+    this.props.send(this.state);
+  }
+  
+  handleChangeText(event) {
+    this.setState({
+      name: event.target.value
+    });
+  }
+  
+  handleChangeTextArea(event) {
+    this.setState({
+      wish: event.target.value
+    });
+  }
+  
+  handleChangePrio(event) {
+    this.setState({
+      priority: event.target.value
+    });
+  }
 
   
   render() {
     return (
       
-      <form onSubmit={() => {handleSubmit()}}>
-        <label for="name" >Name</label>
-        <input type="text" id="name" name="name" placeholder="Enter your name..."/>
-        <label for="wish">Describe your wish</label>
-        <textarea id="wish" name="wish"/>
-        <label for="priority">Priority of the Wish</label>
-        <select name="priority" id="priority">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-        </select>
+      <form onSubmit={this.handleSubmit}>
+        <label for="name">Name:
+          <input 
+            type="text" 
+            id="name" 
+            name="name" 
+            value={this.state.name}
+            onChange={this.handleChangeText}
+          />
+        </label>  
+        <label>Describe your wish..
+          <textarea 
+            id="wish" 
+            name="wish" 
+            value={this.state.wish}
+            onChange={this.handleChangeTextArea}
+          />
+        </label>
+        <label for="priority">Priority of the Wish
+          <select 
+            name="priority" 
+            id="priority" 
+            value={this.state.priority}
+            onChange={this.handleChangePrio}
+          >
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </label>
       </form>
     );
   }
