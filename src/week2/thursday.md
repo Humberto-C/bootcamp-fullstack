@@ -19,7 +19,7 @@ The form should be a React component and should contain:
 
 
 <details>
-  <summary>Solution</summary>
+  <summary>Solution 1</summary>
   
   ```js
     
@@ -107,4 +107,74 @@ class WishlistForm extends React.Component {
 
   ```
   
+</details>
+
+<details>
+  <summary>Solution 2</summary>
+  
+  ```js
+  import React from 'react';
+import { useState, useEffect } from 'react';
+
+const WishlistForm = (props) => {
+    const [name, setName] = useState('');
+    const [wish, setWish] = useState('');
+    const [priority, setPriority] = useState(1);
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        props.send(name, wish, priority);
+    }
+
+    const handleChange = (event) => {
+        const name = event.target.name; 
+        name === 'name' ? setName(event.target.value) 
+        : name === 'wish' ? setWish(event.target.value) 
+        : setPriority(event.target.value);
+    }
+
+
+    return (
+        <>
+            <form onSubmit={handleSubmit}>
+                <label for="name">Name:
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        value={name}
+                        onChange={handleChange}
+                    />
+                </label><br></br>
+                <label>Describe your wish..
+                    <textarea
+                        id="wish"
+                        name="wish"
+                        value={wish}
+                        onChange={handleChange}
+                    />
+                </label><br></br>
+                <label for="priority">Priority of the Wish
+                    <select
+                        name="priority"
+                        id="priority"
+                        value={priority}
+                        onChange={handleChange}
+                    >
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </label><br></br>
+                <input type="submit" value='Submit'></input>
+                
+            </form>
+            <p>`Los campos ingresados son: {name}, {wish} y {priority}`</p>
+        </>
+    );
+}
+  
+  ```
 </details>
