@@ -8,7 +8,7 @@ React code to build a simple search filter functionality to display a filtered l
 
 ``` Example ```
 
-![filter](./src/images/searchfilter.gif)
+![filter](/src/images/searchfilter.gif)
 
 <details>
   <summary>Solution</summary>
