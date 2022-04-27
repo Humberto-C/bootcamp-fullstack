@@ -16,8 +16,15 @@
   - [Monday](/src/week2/monday.md)
   - [Wednesday](/src/week2/wednesday.md)
   - [Thursday](/src/week2/thursday.md)
-
   
+</details>
+
+<details>
+  <summary>🏁 Week 3</summary>
+  
+  - [Monday](/src/week3/monday.md)
+  - [Wednesday](/src/week3/wednesday.md)
+  - [Thursday](/src/week3/thursday.md)
   
 </details>
 
