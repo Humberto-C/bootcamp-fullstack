@@ -23,8 +23,9 @@
   <summary>🏁 Week 3</summary>
   
   - [Monday](/src/week3/monday.md)
+  - [Tuesday](/src/week3/tuesday.md)
   - [Wednesday](/src/week3/wednesday.md)
-  - [Thursday](/src/week3/thursday.md)
+  
   
 </details>
 
