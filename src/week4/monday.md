@@ -17,3 +17,19 @@ a = "abcdefghijklmnopqrstuvwxyz"
 longest(a, a) -> "abcdefghijklmnopqrstuvwxyz"
 
 ```
+
+<details>
+  <summary>Solution</summary>
+  
+  ```js
+  
+  function longest(s1, s2) {
+    return (s1 + s2).split('').reduce((acc, el) => {
+        if(acc.indexOf(el) < 0) acc += el;
+        return acc;
+    }).split('').sort().join('');
+  }
+  
+  ```
+  
+</details>
