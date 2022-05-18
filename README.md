@@ -33,6 +33,9 @@
   <summary>🏁 Week 4</summary>
   
   - [Monday](/src/week4/monday.md)
+  - [Tuesday](/src/week4/tuesday.md)
+  - [Wednesday](/src/week4/wednesday.md)
+  - [Thursday](/src/week4/thursday.md) ⏸️
   
   
 </details>
