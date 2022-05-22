@@ -31,4 +31,14 @@ Write a method base64_to_base10 that will take a string (Base 64) number and out
 <details>
   <summary>Solution</summary>
   
+  ```js
+  function base64toBase10(base64) {
+    const symbols = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/';
+    return base64.split('').reverse().reduce((acc, el, index) => {
+        acc += Math.pow(64, index) * symbols.indexOf(el);
+        return acc;
+    }, 0);
+}
+  
+  ```
 </details>
