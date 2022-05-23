@@ -91,5 +91,20 @@ If two words score the same, return the word that appears earliest in the origin
 
 All letters will be lowercase and all inputs will be valid.
   
+<details>
+  <summary>Solution</summary>
+  
+  ```js
+  function high(x){
+    let abc = '0abcdefghijklmnopqrstuvwxyz';
+    let scores = x.split(' ').map((word) => (
+        word.split('').reduce((acc, el) => acc += abc.indexOf(el), 0)
+    ))
+    return x.split(' ')[scores.findIndex((x, index) => x === Math.max(...scores))];
+  }
+  ```
+  
+</details>
+  
 
 #  Thursday
