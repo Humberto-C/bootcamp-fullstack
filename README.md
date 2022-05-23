@@ -40,3 +40,13 @@
   
 </details>
 
+<details>
+  <summary>🏁 Week 5 </summary>
+  
+  - [Monday](/src/week5/monday.md)
+  - [Tuesday](/src/week5/tuesday-wednesday-thursday.md)
+  - [Wednesday](/src/week5/tuesday-wednesday-thursday.md)
+  - [Thursday](/src/week5/tuesday-wednesday-thursday.md) 
+  
+  
+</details>
