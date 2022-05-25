@@ -145,6 +145,18 @@ Place all people in alphabetical order where Mothers are followed by their child
   ```
   
 </details>
+	
+	
+<details>
+	<summary>Case of study first solution from CodeWars</summary>
+	
+```js
 
+function findChildren(dancingBrigade) {
+return [...dancingBrigade].sort((a, b) => a.localeCompare(b, 'en', {caseFirst: 'upper'})).join('');
+}
+```
+	
+</details>
   
   
