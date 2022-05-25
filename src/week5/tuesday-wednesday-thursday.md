@@ -121,6 +121,30 @@ Legend:
   
 Task:
 Place all people in alphabetical order where Mothers are followed by their children, i.e. "aAbaBb" => "AaaBbb".
+  
+<details>
+  <summary>First Solution</summary>
+  
+  ```js
+  function findChildren(dancingBrigade) {
+	let newStr = '';
+	dancingBrigade.toLowerCase().split('').sort()
+		.reduce((acc, el) => {
+			if(acc.indexOf(el) < 0) {
+				newStr += el.toUpperCase();	
+				acc = el;
+			}
+			else {
+				newStr += el;
+				acc += el;
+			};
+			return acc;
+	}, '')
+		return newStr;
+  }  
+  ```
+  
+</details>
 
   
   
