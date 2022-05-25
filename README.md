@@ -41,7 +41,7 @@
 </details>
 
 <details>
-  <summary>🏁 Week 5 </summary>
+  <summary>🏁 Week 5 ✔️</summary>
   
   - [Monday](/src/week5/monday.md)
   - [Tuesday](/src/week5/tuesday-wednesday-thursday.md)
