@@ -50,3 +50,14 @@
   
   
 </details>
+
+<details>
+  <summary>🏁 Week 6 ✔️</summary>
+  
+  - [Monday](/src/week6/monday.md)
+  - [Tuesday](/src/week6/tuesday-wednesday-thursday.md)
+  - [Wednesday](/src/week6/tuesday-wednesday-thursday.md)
+  - [Thursday](/src/week6/tuesday-wednesday-thursday.md) 
+  
+  
+</details>
