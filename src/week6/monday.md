@@ -34,4 +34,10 @@ So the maximum value that you can obtain is 9.
 
 <details>
   <summary>Solution</summary>
+  
+  ```sql
+  
+  SELECT greatest(a+b+c, (a+b)*c, a*(b+c), a*b*c) /* your query - you are given columns a, b, and c */ AS res FROM expression_matter;
+    
+  ```
 </details>
